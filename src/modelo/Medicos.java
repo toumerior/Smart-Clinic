@@ -9,6 +9,7 @@ public class Medicos {
     private Date duracao_consulta;
     private int number1;
     private int number2;
+    private int number3;
     
 	public int getMedico_id() {
 		return medico_id;
