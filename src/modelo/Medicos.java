@@ -7,9 +7,6 @@ public class Medicos {
     private int medico_id;
     private String CRM;
     private Date duracao_consulta;
-    private int number1;
-    private int number2;
-    private int number3;
     
 	public int getMedico_id() {
 		return medico_id;
