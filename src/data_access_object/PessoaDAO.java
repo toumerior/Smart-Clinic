@@ -1,4 +1,6 @@
-package modelo;
+package data_access_object;
+
+import modelo.Pessoa;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,8 +17,7 @@ public class PessoaDAO {
     
     public void Inserir(Pessoa pessoa) throws SQLException {
     	String sql = 
-    			"insert into MEDICOS( " +
-    			"   PESSOA_ID, " +
+    			"insert into PESSOA( " +
     			"   NOME, " +
     			"   RG, " +
     			"   SEXO, " +
@@ -24,18 +25,17 @@ public class PessoaDAO {
     			"   ENDERECO, " +
     			"   TELEFONE " +    			
     			") values ( " +
-    			"	?, ?, ?, ?, ?, ?, ? " +
+    			"	?, ?, ?, ?, ?, ? " +
     			")";
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, pessoa.getPessoa_id());
-    	query.setString(1, pessoa.getNome());
-    	query.setString(2, pessoa.getRg());
-    	query.setString(3, pessoa.getSexo());
-    	query.setString(4, pessoa.getCpf());
-    	query.setString(5, pessoa.getEndereco());
-    	query.setString(6, pessoa.getTelefone());
+    	query.setString(0, pessoa.getNome());
+    	query.setString(1, pessoa.getRg());
+    	query.setString(2, pessoa.getSexo());
+    	query.setString(3, pessoa.getCpf());
+    	query.setString(4, pessoa.getEndereco());
+    	query.setString(5, pessoa.getTelefone());
     	
     	query.execute();
     }
@@ -43,7 +43,6 @@ public class PessoaDAO {
     public void Atualizar(Pessoa pessoa) throws SQLException {
     	String sql = 
     			"update PESSOA set " +
-    			"   PESSOA_ID = ?, " +
     			"   NOME = ?, " +
     			"   RG = ?, " +
     			"   SEXO = ?, " +
@@ -54,14 +53,13 @@ public class PessoaDAO {
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, pessoa.getPessoa_id());
-    	query.setString(1, pessoa.getNome());
-    	query.setString(2, pessoa.getRg());
-    	query.setString(3, pessoa.getSexo());
-    	query.setString(4, pessoa.getCpf());
-    	query.setString(5, pessoa.getEndereco());
-    	query.setString(6, pessoa.getTelefone());
-    	query.setInt(7, pessoa.getPessoa_id());
+    	query.setString(0, pessoa.getNome());
+    	query.setString(1, pessoa.getRg());
+    	query.setString(2, pessoa.getSexo());
+    	query.setString(3, pessoa.getCpf());
+    	query.setString(4, pessoa.getEndereco());
+    	query.setString(5, pessoa.getTelefone());
+    	query.setInt(6, pessoa.getPessoa_id());
     	
     	query.execute();
     }

@@ -1,4 +1,6 @@
-package modelo;
+package data_access_object;
+
+import modelo.Pacientes;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,8 +17,7 @@ public class PacientesDAO {
     
     public void Inserir(Pacientes paciente) throws SQLException {
     	String sql = 
-    			"insert into PACIENTES( " +
-    			"	PACIENTE_ID, " +
+    			"insert into PACIENTES( " +    		
     			"   PESSOA_ID, " +
     			"   CONVENIO_ID " +
     			") values ( " +
@@ -25,9 +26,8 @@ public class PacientesDAO {
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, paciente.getPaciente_id());
-    	query.setInt(1, paciente.getPessoa_id());
-    	query.setInt(2, paciente.getConvenio_id());
+    	query.setInt(0, paciente.getPessoa_id());
+    	query.setInt(1, paciente.getConvenio_id());
     	
     	query.execute();
     }
@@ -35,17 +35,15 @@ public class PacientesDAO {
     public void Atualizar(Pacientes paciente) throws SQLException {
     	String sql = 
     			"update PACIENTES set " +
-    			"	PACIENTE_ID = ?, " +
     			"   PESSOA_ID = ?, " +
     			"   CONVENIO_ID = ? " +
     			"where PACIENTE_ID = ?";
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, paciente.getPaciente_id());
-    	query.setInt(1, paciente.getPessoa_id());
-    	query.setInt(2, paciente.getConvenio_id());
-    	query.setInt(3, paciente.getPaciente_id());
+    	query.setInt(0, paciente.getPessoa_id());
+    	query.setInt(1, paciente.getConvenio_id());
+    	query.setInt(2, paciente.getPaciente_id());
     	
     	query.execute();
     }
