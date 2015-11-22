@@ -9,7 +9,7 @@ public class ConnectionFactory {
 	public Connection getConnection() {
 	     try {
 	         return DriverManager.getConnection(
-	           "jdbc:mysql://localhost/smart_clinic", "root", "brunopr"
+	           "jdbc:mysql://localhost/Smart-Clinic", "root", ""
 	         );
 	     } catch (SQLException e) {
 	         throw new RuntimeException(e);
