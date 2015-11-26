@@ -9,6 +9,6 @@ create table COMPROMISSOS_MEDICOS (
 );
 
 alter table FICHAS_MEDICAS
-add constraint FK_FICHAS_MED_PAC
+add constraint FK_COMPROM_MED_MEDICOS
 foreign key (MEDICO_ID)
-references MEDICOS (MEDICO_ID);	
+references MEDICOS (MEDICO_ID);

@@ -6,13 +6,13 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import conectores.ConnectionFactory;
+import conectores.ConnectionFactory;;
 
 public class ClinicaDAO {
 	private Connection con;
 	
 	public ClinicaDAO() {
-    	this.con = new ConnectionFactory().getConnection();
+		this.con = new ConnectionFactory().getConnection();
     }
 	
 	public void inserir(Clinica clinica) throws SQLException {
