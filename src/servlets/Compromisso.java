@@ -46,7 +46,7 @@ public class Compromisso extends HttpServlet {
 		String teste = request.getParameter("medico_id");
 		compromisso.setMedico_id(Integer.parseInt(teste));
 		
-		/* Pegando a data como string e transformando em SQL.Date */
+		// Pegando a data como string e transformando em SQL.Date 
 		String dataString = request.getParameter("data_compromisso");  
 		DateFormat fmt = new SimpleDateFormat("dd/MM/yyyy");  
 		
@@ -59,7 +59,7 @@ public class Compromisso extends HttpServlet {
 			e1.printStackTrace();
 		}
 		
-		/* Pegando a hora como string e transformando em SQL.TIME */
+		// Pegando a hora como string e transformando em SQL.TIME 
 		String hora_inicial = request.getParameter("hora_inicial");
 		SimpleDateFormat sdf = new SimpleDateFormat("hh:mm");
 		long ms;
@@ -73,7 +73,7 @@ public class Compromisso extends HttpServlet {
 			e1.printStackTrace();
 		}
 		
-		/* Pegando a hora como string e transformando em SQL.TIME */
+		// Pegando a hora como string e transformando em SQL.TIME 
 		String hora_final = request.getParameter("hora_final");
 		sdf = new SimpleDateFormat("hh:mm");
 		

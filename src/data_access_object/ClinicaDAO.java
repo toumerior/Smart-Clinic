@@ -28,10 +28,10 @@ public class ClinicaDAO {
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setString(0, clinica.getNome());
-    	query.setString(1, clinica.getCNPJ());
-    	query.setString(2, clinica.getEndereco());
-    	query.setString(3, clinica.getTelefone());
+    	query.setString(1, clinica.getNome());
+    	query.setString(2, clinica.getCNPJ());
+    	query.setString(3, clinica.getEndereco());
+    	query.setString(4, clinica.getTelefone());
     	
     	query.execute();
     }
@@ -47,11 +47,11 @@ public class ClinicaDAO {
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setString(0, clinica.getNome());
-    	query.setString(1, clinica.getCNPJ());
-    	query.setString(2, clinica.getEndereco());
-    	query.setString(3, clinica.getTelefone());
-    	query.setInt(4, clinica.getClinica_id());
+    	query.setString(1, clinica.getNome());
+    	query.setString(2, clinica.getCNPJ());
+    	query.setString(3, clinica.getEndereco());
+    	query.setString(4, clinica.getTelefone());
+    	query.setInt(5, clinica.getClinica_id());
     	
     	query.execute();
     }

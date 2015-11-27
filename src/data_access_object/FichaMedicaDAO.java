@@ -31,13 +31,13 @@ private Connection con;
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, fichaMedica.getPaciente_id());
-    	query.setString(1, fichaMedica.getQueixaPaciente());
-    	query.setString(2, fichaMedica.getAntecedentesMedicos());
-    	query.setString(3, fichaMedica.getDiagnostico());
-    	query.setString(4, fichaMedica.getMedicacao());
-    	query.setString(5, fichaMedica.getExames());
-    	query.setString(6, fichaMedica.getExamesComplementares());
+    	query.setInt(1, fichaMedica.getPaciente_id());
+    	query.setString(2, fichaMedica.getQueixaPaciente());
+    	query.setString(3, fichaMedica.getAntecedentesMedicos());
+    	query.setString(4, fichaMedica.getDiagnostico());
+    	query.setString(5, fichaMedica.getMedicacao());
+    	query.setString(6, fichaMedica.getExames());
+    	query.setString(7, fichaMedica.getExamesComplementares());
     	
     	query.execute();
     }
@@ -56,14 +56,14 @@ private Connection con;
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, fichaMedica.getPaciente_id());
-    	query.setString(1, fichaMedica.getQueixaPaciente());
-    	query.setString(2, fichaMedica.getAntecedentesMedicos());
-    	query.setString(3, fichaMedica.getDiagnostico());
-    	query.setString(4, fichaMedica.getMedicacao());
-    	query.setString(5, fichaMedica.getExames());
-    	query.setString(6, fichaMedica.getExamesComplementares());
-    	query.setInt(7, fichaMedica.getFichaMedica_id());
+    	query.setInt(1, fichaMedica.getPaciente_id());
+    	query.setString(2, fichaMedica.getQueixaPaciente());
+    	query.setString(3, fichaMedica.getAntecedentesMedicos());
+    	query.setString(4, fichaMedica.getDiagnostico());
+    	query.setString(5, fichaMedica.getMedicacao());
+    	query.setString(6, fichaMedica.getExames());
+    	query.setString(7, fichaMedica.getExamesComplementares());
+    	query.setInt(8, fichaMedica.getFichaMedica_id());
     	
     	query.execute();
     }
@@ -74,7 +74,7 @@ private Connection con;
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, fichaMedicaID);
+    	query.setInt(1, fichaMedicaID);
     	
     	query.execute();
     	

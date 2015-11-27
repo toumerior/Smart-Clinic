@@ -26,8 +26,8 @@ public class PacientesDAO {
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, paciente.getPessoa_id());
-    	query.setInt(1, paciente.getConvenio_id());
+    	query.setInt(1, paciente.getPessoa_id());
+    	query.setInt(2, paciente.getConvenio_id());
     	
     	query.execute();
     }
@@ -41,9 +41,9 @@ public class PacientesDAO {
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, paciente.getPessoa_id());
-    	query.setInt(1, paciente.getConvenio_id());
-    	query.setInt(2, paciente.getPaciente_id());
+    	query.setInt(1, paciente.getPessoa_id());
+    	query.setInt(2, paciente.getConvenio_id());
+    	query.setInt(3, paciente.getPaciente_id());
     	
     	query.execute();
     }
@@ -54,7 +54,7 @@ public class PacientesDAO {
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, paciente_id);
+    	query.setInt(1, paciente_id);
     	
     	query.execute();
     }

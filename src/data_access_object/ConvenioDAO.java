@@ -27,10 +27,10 @@ private Connection con;
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setString(0, convenio.getNome());
-    	query.setString(1, convenio.getCNPJ());
-    	query.setString(2, convenio.getEndereco());
-    	query.setString(3, convenio.getTelefone());
+    	query.setString(1, convenio.getNome());
+    	query.setString(2, convenio.getCNPJ());
+    	query.setString(3, convenio.getEndereco());
+    	query.setString(4, convenio.getTelefone());
     	
     	query.execute();
     }
@@ -46,11 +46,11 @@ private Connection con;
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setString(0, convenio.getNome());
-    	query.setString(1, convenio.getCNPJ());
-    	query.setString(2, convenio.getEndereco());
-    	query.setString(3, convenio.getTelefone());
-    	query.setInt(4, convenio.getConvenio_id());
+    	query.setString(1, convenio.getNome());
+    	query.setString(2, convenio.getCNPJ());
+    	query.setString(3, convenio.getEndereco());
+    	query.setString(4, convenio.getTelefone());
+    	query.setInt(5, convenio.getConvenio_id());
     	
     	query.execute();
     }
@@ -61,7 +61,7 @@ private Connection con;
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, convenio_id);
+    	query.setInt(1, convenio_id);
     	
     	query.execute();
     	

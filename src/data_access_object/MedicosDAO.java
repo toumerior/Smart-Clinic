@@ -26,9 +26,9 @@ public class MedicosDAO {
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, medico.getPessoa_id());
-    	query.setString(1, medico.getCRM());
-    	query.setDate(2, medico.getDuracao_consulta());
+    	query.setInt(1, medico.getPessoa_id());
+    	query.setString(2, medico.getCRM());
+    	query.setDate(3, medico.getDuracao_consulta());
     	
     	query.execute();
     }
@@ -43,10 +43,10 @@ public class MedicosDAO {
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, medico.getPessoa_id());
-    	query.setString(1, medico.getCRM());
-    	query.setDate(2, medico.getDuracao_consulta());
-    	query.setInt(3, medico.getMedico_id());
+    	query.setInt(1, medico.getPessoa_id());
+    	query.setString(2, medico.getCRM());
+    	query.setDate(3, medico.getDuracao_consulta());
+    	query.setInt(4, medico.getMedico_id());
     	
     	query.execute();
     }
@@ -57,7 +57,7 @@ public class MedicosDAO {
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, medico_id);
+    	query.setInt(1, medico_id);
     	
     	query.execute();
     	

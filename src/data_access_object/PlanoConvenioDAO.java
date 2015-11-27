@@ -27,9 +27,9 @@ public class PlanoConvenioDAO {
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, plano.getConvenio_id());
-    	query.setString(1, plano.getNome());
-    	query.setString(2, plano.getDescricao());
+    	query.setInt(1, plano.getConvenio_id());
+    	query.setString(2, plano.getNome());
+    	query.setString(3, plano.getDescricao());
     	
     	query.execute();
     }
@@ -44,10 +44,10 @@ public class PlanoConvenioDAO {
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, plano.getConvenio_id());
-    	query.setString(1, plano.getNome());
-    	query.setString(2, plano.getDescricao());
-    	query.setInt(3, plano.getConvenio_id());
+    	query.setInt(1, plano.getConvenio_id());
+    	query.setString(2, plano.getNome());
+    	query.setString(3, plano.getDescricao());
+    	query.setInt(4, plano.getConvenio_id());
     	
     	query.execute();
     }

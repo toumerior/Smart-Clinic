@@ -25,7 +25,7 @@ private Connection con;
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, secretario.getPessoa_id());
+    	query.setInt(1, secretario.getPessoa_id());
     	
     	query.execute();
     }
@@ -38,8 +38,8 @@ private Connection con;
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, secretario.getPessoa_id());
-    	query.setInt(1, secretario.getSecretario_id());
+    	query.setInt(1, secretario.getPessoa_id());
+    	query.setInt(2, secretario.getSecretario_id());
     	
     	query.execute();
     }
@@ -50,7 +50,7 @@ private Connection con;
     	
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
-    	query.setInt(0, secretarioID);
+    	query.setInt(1, secretarioID);
     	
     	query.execute();
     	
