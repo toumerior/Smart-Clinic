@@ -2,7 +2,7 @@ create table MEDICO (
 	MEDICO_ID int(10) not null auto_increment,
     PESSOA_ID int(10) not null,	
     CRM varchar(15),
-    DURACAO_CONSULTA datetime not null,
+    DURACAO_CONSULTA int(10) not null,
     primary key (MEDICO_ID)
 );
 

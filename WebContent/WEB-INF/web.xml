@@ -22,5 +22,27 @@
 		<servlet-name>servletCadastrarPessoa</servlet-name>
 		<url-pattern>/CadastrarPessoa</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>servletCadastrarMedico</servlet-name>
+		<servlet-class>servlets.CadastrarMedico</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>servletCadastrarMedico</servlet-name>
+		<url-pattern>/CadastrarMedico</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>servletCadastrarPaciente</servlet-name>
+		<servlet-class>servlets.CadastrarPaciente</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>servletCadastrarPaciente</servlet-name>
+		<url-pattern>/CadastrarPaciente</url-pattern>
+	</servlet-mapping>
+	
+	
 
 </web-app>

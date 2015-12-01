@@ -4,7 +4,7 @@
  <meta charset="utf-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Gravar Compromisso</title>
+ <title>Cadastrar Pessoa</title>
 
  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
  <link href="bootstrap/css/style.css" rel="stylesheet">
@@ -34,41 +34,31 @@
  </nav>
  
  <div id="main" class="container-fluid">
-  <h3 class="page-header">Compromisso (Protótipo)</h3>
-  <form action="${pageContext.request.contextPath}/Compromisso" method="post">
+  <h3 class="page-header">Cadastrar Médico</h3>
+  <form action="${pageContext.request.contextPath}/CadastrarMedico" method="post">
     
    <div class="row">
-    <div class="form-group col-md-2">
-     <label for="campo1">Código do médico</label>
-     <input type="text" class="form-control" name="medico_id" id="medico_id">
-    </div>
- 
-    <div class="form-group col-md-4">
-     <label for="campo2">Data do compromisso</label>
-     <input type="text" class="form-control" name="data_compromisso" id="data_compromisso">
+    <div class="form-group col-md-3">
+     <label for="campo1">Código da pessoa</label>
+     <input type="text" class="form-control" name="codPessoa" id="codPessoa">
     </div>
  
     <div class="form-group col-md-2">
-     <label for="campo3">Hora inicial</label>
-     <input type="text" class="form-control" name="hora_inicial" id="hora_inicial">
+     <label for="campo2">CRM</label>
+     <input type="text" class="form-control" name="CRM" id="CRM">
     </div>
-    
+ 
     <div class="form-group col-md-2">
-     <label for="campo4">Hora final</label>
-     <input type="text" class="form-control" name="hora_final" id="hora_final">
+     <label for="campo3">Duração de consulta</label>
+     <input type="text" class="form-control" name="duracaoConsulta" id="duracaoConsulta">
     </div>
    </div>
-   
-    <div class="form-group col-md-2">
-     <label for="campo5">Observação</label>
-     <input type="text" class="form-control" name="observacao" id="observacao">
-    </div>
        
     <hr />
     <div id="any" class="row">
       <div class="col-md-12">
-        <button type="submit" class="btn btn-primary">Salvar</button>
-        <a href="GravarCompromisso.jsp" class="btn btn-default">Cancelar</a>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <a href="cadastrarPessoa.jsp" class="btn btn-default">Cancelar</a>
       </div>
     </div>
   </form>
