@@ -61,10 +61,11 @@
    
     <div class="form-group col-md-2">
      <label for="campo5">Observação</label>
-     <input type="text" class="form-control" name="observacao" id="observacao">
+     <input type="text" class="form-control" name="observacao" id="observacao" value="Valor">
     </div>
-       
+    
     <hr />
+
     <div id="any" class="row">
       <div class="col-md-12">
         <button type="submit" class="btn btn-primary">Salvar</button>
@@ -72,6 +73,7 @@
       </div>
     </div>
   </form>
+  
  </div> 
  
  <script src="bootstrap/js/jquery.min.js"></script>

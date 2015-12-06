@@ -43,6 +43,16 @@
 		<url-pattern>/CadastrarPaciente</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>servletCompromisso</servlet-name>
+		<servlet-class>servlets.Compromisso</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>servletCompromisso</servlet-name>
+		<url-pattern>/Compromisso</url-pattern>
+	</servlet-mapping>
+	
 	
 
 </web-app>
