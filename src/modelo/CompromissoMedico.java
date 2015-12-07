@@ -1,14 +1,11 @@
 package modelo;
 
-import java.sql.Date;
-import java.sql.Time;
-
 public class CompromissoMedico {
 	private int compromisso_id;
 	private int medico_id;
-	private Date data_compromisso;
-	private Time hora_inicial;
-	private Time hora_final;
+	private String data_compromisso;
+	private String hora_inicial;
+	private String hora_final;
 	private String observacao;
 	
 	public int getCompromisso_id() {
@@ -23,16 +20,16 @@ public class CompromissoMedico {
 	public void setMedico_id(int medico_id) {
 		this.medico_id = medico_id;
 	}
-	public Time getHora_inicial() {
+	public String getHora_inicial() {
 		return hora_inicial;
 	}
-	public void setHora_inicial(Time hora_inicial) {
+	public void setHora_inicial(String hora_inicial) {
 		this.hora_inicial = hora_inicial;
 	}
-	public Date getData_compromisso() {
+	public String getData_compromisso() {
 		return data_compromisso;
 	}
-	public void setData_compromisso(Date data_compromisso) {
+	public void setData_compromisso(String data_compromisso) {
 		this.data_compromisso = data_compromisso;
 	}
 	public String getObservacao() {
@@ -41,10 +38,10 @@ public class CompromissoMedico {
 	public void setObservacao(String observacao) {
 		this.observacao = observacao;
 	}
-	public Time getHora_final() {
+	public String getHora_final() {
 		return hora_final;
 	}
-	public void setHora_final(Time hora_final) {
+	public void setHora_final(String hora_final) {
 		this.hora_final = hora_final;
 	}
 

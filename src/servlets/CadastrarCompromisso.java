@@ -13,13 +13,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 //@WebServlet("/Compromisso")
-public class Compromisso extends HttpServlet {
+public class CadastrarCompromisso extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Compromisso() {
+    public CadastrarCompromisso() {
         super();
     }
 
@@ -66,5 +66,4 @@ public class Compromisso extends HttpServlet {
 		out.println("Compromisso inserido com sucesso!"); 
 		out.close();		
 	}
-
 }

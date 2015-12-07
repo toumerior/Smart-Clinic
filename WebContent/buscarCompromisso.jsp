@@ -46,9 +46,9 @@
       %>
         <tr>
           <td><%=compromisso.getMedico_id() %></td> 
-          <td><%=compromisso.getData_compromisso().getTime() %></td>
-          <td><%=compromisso.getHora_inicial().getTime() %></td>
-          <td><%=compromisso.getHora_final().getTime() %></td>
+          <td><%=compromisso.getData_compromisso() %></td>
+          <td><%=compromisso.getHora_inicial() %></td>
+          <td><%=compromisso.getHora_final() %></td>
           <td><%=compromisso.getObservacao() %></td>
         </tr>
       <%

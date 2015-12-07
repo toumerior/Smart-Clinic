@@ -40,10 +40,10 @@ public class CompromissoMedicoDAO {
 		  CompromissoMedico compromisso = new CompromissoMedico();
 		  
 		  compromisso.setMedico_id(rs.getInt("MEDICO_ID"));
-		  compromisso.setData_compromisso(rs.getDate("DATA_COMPROMISSO"));
-		  compromisso.setHora_inicial(rs.getTime("HORA_INICIAL"));
-		  compromisso.setHora_final(rs.getTime("HORA_FINAL"));
-		  compromisso.setHora_final(rs.getTime("OBSERVACAO"));
+		  compromisso.setData_compromisso(rs.getString("DATA_COMPROMISSO"));
+		  compromisso.setHora_inicial(rs.getString("HORA_INICIAL"));
+		  compromisso.setHora_final(rs.getString("HORA_FINAL"));
+		  compromisso.setObservacao(rs.getString("OBSERVACAO"));
 		  
 		  comp.add(compromisso);
 		}
@@ -69,9 +69,9 @@ public class CompromissoMedicoDAO {
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
     	query.setInt(1, compromisso.getMedico_id());
-    	query.setDate(2, compromisso.getData_compromisso());
-    	query.setTime(3, compromisso.getHora_inicial());
-    	query.setTime(4, compromisso.getHora_final());
+    	query.setString(2, compromisso.getData_compromisso());
+    	query.setString(3, compromisso.getHora_inicial());
+    	query.setString(4, compromisso.getHora_final());
     	query.setString(5, compromisso.getObservacao());
     	
     	query.execute();
@@ -91,9 +91,9 @@ public class CompromissoMedicoDAO {
     	PreparedStatement query = this.con.prepareStatement(sql);
     	
     	query.setInt(1, compromisso.getMedico_id());
-    	query.setDate(2, compromisso.getData_compromisso());
-    	query.setTime(3, compromisso.getHora_inicial());
-    	query.setTime(4, compromisso.getHora_final());
+    	query.setString(2, compromisso.getData_compromisso());
+    	query.setString(3, compromisso.getHora_inicial());
+    	query.setString(4, compromisso.getHora_final());
     	query.setString(5, compromisso.getObservacao());
     	query.setInt(6, compromisso.getCompromisso_id());
     	

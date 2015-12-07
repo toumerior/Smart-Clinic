@@ -1,9 +1,9 @@
 create table COMPROMISSO_MEDICO (
   COMPROMISSO_ID int(10) not null auto_increment,
   MEDICO_ID int(10) not null,
-  DATA_COMPROMISSO date not null,
-  HORA_INICIAL time not null,
-  HORA_FINAL time not null,
+  DATA_COMPROMISSO varchar(10) not null,
+  HORA_INICIAL varchar(5) not null,
+  HORA_FINAL varchar(5) not null,
   OBSERVACAO varchar(400),
   primary key (COMPROMISSO_ID)
 );
