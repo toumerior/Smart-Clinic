@@ -18,19 +18,22 @@ public class CompromissoMedicoDAO {
     	this.con = new ConnectionFactory().getConnection();
     }
 	
-	public List<CompromissoMedico> Buscar(int medico_id) throws SQLException {
+	public List<CompromissoMedico> buscarCompromisso(int medico_id) throws SQLException {
 		String sql = 
 				"select " +
 		        "  MEDICO_ID, " +
+				"  COMPROMISSO_ID, " +
 				"  DATA_COMPROMISSO, " +
 		        "  HORA_INICIAL, " +
 				"  HORA_FINAL, " +
 		        "  OBSERVACAO " +
 				"from " +
 		        "  COMPROMISSO_MEDICO " +
-				"where MEDICO_ID = 1";
+				"where MEDICO_ID = ?";
 		
 		PreparedStatement query = this.con.prepareStatement(sql);
+		
+		query.setInt(1, medico_id );
 		
 		ResultSet rs = query.executeQuery();
 		
@@ -39,6 +42,7 @@ public class CompromissoMedicoDAO {
 		while (rs.next()) {
 		  CompromissoMedico compromisso = new CompromissoMedico();
 		  
+		  compromisso.setCompromisso_id(rs.getInt("COMPROMISSO_ID"));
 		  compromisso.setMedico_id(rs.getInt("MEDICO_ID"));
 		  compromisso.setData_compromisso(rs.getString("DATA_COMPROMISSO"));
 		  compromisso.setHora_inicial(rs.getString("HORA_INICIAL"));

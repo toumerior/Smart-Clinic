@@ -53,6 +53,16 @@
 		<url-pattern>/Compromisso</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>servletValidaLogin</servlet-name>
+		<servlet-class>servlets.ValidaLogin</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>servletValidaLogin</servlet-name>
+		<url-pattern>/ValidaLogin</url-pattern>
+	</servlet-mapping>
+	
 	
 
 </web-app>

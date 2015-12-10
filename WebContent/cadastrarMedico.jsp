@@ -58,7 +58,7 @@
     <div id="any" class="row">
       <div class="col-md-12">
         <button type="submit" class="btn btn-primary">Cadastrar</button>
-        <a href="cadastrarPessoa.jsp" class="btn btn-default">Cancelar</a>
+        <a href="${pageContext.request.contextPath}/admin/index.jsp" class="btn btn-default">Cancelar</a>
       </div>
     </div>
   </form>

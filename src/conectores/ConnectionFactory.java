@@ -13,7 +13,7 @@ public class ConnectionFactory {
 	         try {
 	        	 DriverManager.registerDriver(new com.mysql.jdbc.Driver());
 				return DriverManager.getConnection(
-				   "jdbc:mysql://localhost:3306/smart_clinic", "root", "eXboxm4ster"
+				   "jdbc:mysql://localhost:3306/teste", "root", "3512655"
 				 );
 			} catch (SQLException e) {
 				throw new RuntimeException(e);
