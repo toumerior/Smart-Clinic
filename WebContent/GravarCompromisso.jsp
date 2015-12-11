@@ -20,7 +20,7 @@
      <span class="icon-bar"></span>
      <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">Smart Clinic</a>
+    <a class="navbar-brand" href="index.jsp">Smart Clinic</a>
    </div>
    <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right">
@@ -56,17 +56,15 @@
     <div class="form-group col-md-2">
      <label for="campo4">Hora final</label>
      <input type="text" class="form-control" name="hora_final" id="hora_final">
-    </div>
+    </div>/
    </div>
    
-    <div class="form-group col-md-2">
+    <div class="form-group col-md-8">
      <label for="campo5">Observação</label>
-     <input type="text" class="form-control" name="observacao" id="observacao" value="Valor">
+     <input type="text" class="form-control" name="observacao" id="observacao">
     </div>
     
-    <hr />
-
-    <div id="any" class="row">
+    <div id="row" class="row">
       <div class="col-md-12">
         <button type="submit" class="btn btn-primary">Salvar</button>
         <a href="GravarCompromisso.jsp" class="btn btn-default">Cancelar</a>

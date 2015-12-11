@@ -48,12 +48,12 @@
    </button>
    
    <ul class = "dropdown-menu" role = "menu">
-      <li><a href = "#">Marcar compromisso</a></li>
+      <li><a href = "GravarCompromisso.jsp">Marcar compromisso</a></li>
       <li><a href = "#">Editar compromisso</a></li>
       <li><a href = "#">Excluir compromisso</a></li>
       
       <li class = "divider"></li>
-      <li><a href = "#">Ver compromissos</a></li>
+      <li><a href = "buscarCompromisso.jsp">Ver compromissos</a></li>
    </ul>
 </div>
 	
@@ -116,9 +116,6 @@
 	<div id="main" class="container-fluid">
 		<h3 class="page-header">Bem-vindo, administrador!</h3>
 	</div>
-
-
-	
 
 </body>
 </html>
